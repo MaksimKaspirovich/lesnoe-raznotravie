@@ -1,1 +1,0 @@
-https://github.com/MaksimKaspirovich/posmotri_v_okno
