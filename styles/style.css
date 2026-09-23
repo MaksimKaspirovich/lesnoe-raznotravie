@@ -1,0 +1,699 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+html {
+  inline-size: 100%;
+}
+
+body {
+  font-family: Inter-Regular, Times, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+}
+
+.header {
+  background-color: #374113;
+  block-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.title {
+  padding-inline-start: 15px;
+  padding-inline-end: 100px;
+  padding-block: 16px;
+  font-size: 36px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.main-page {
+  position: relative;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(255, 255, 255, 0.3) 75%,
+      rgba(255, 255, 255, 0.8) 90%,
+      rgba(255, 255, 255) 100%
+    ),
+    url("../images/honey.png");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-text {
+  font-family: Inter-Regular, Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+  padding-inline-start: 15px;
+  padding-block: 40px;
+}
+
+.about-honey {
+  padding: 15px 25px;
+}
+
+.section-title {
+  padding-inline-start: 15px;
+  padding-block: 25px;
+  font-size: 36px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-block: 50px;
+}
+
+.avatar-image {
+  width: min(250px, 50%);
+  height: auto;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.process {
+  background-color: #374113;
+  position: relative;
+  z-index: 1;
+}
+
+.process::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Vector3.svg);
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-process-title {
+  padding-block: 25px;
+  font-size: 32px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+}
+
+.process-list {
+  list-style: none;
+  padding-inline: 36px;
+  padding-block-end: 30px;
+}
+
+.process-item {
+  background-color: #fff;
+  padding: 30px 30px 40px 30px;
+  border-radius: 30px;
+  margin-block-end: 30px;
+}
+
+.process-item:last-child {
+  margin-block-end: 0;
+}
+
+.process-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-title {
+  font-family: Inter-Regular, Times, serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.number-title {
+  font-family: Inter-Regular, Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.item-list {
+  padding-inline-start: 20px;
+  padding-block-start: 30px;
+  list-style-type: disc;
+}
+
+.item {
+  font-family: Inter-Regular, Times, serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.process-item--corner {
+  background-image: url("../images/honeymoon.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px top;
+  background-size: 140px;
+}
+
+.gallery-section {
+  padding: 15px 18px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 85px;
+  gap: 15px;
+}
+
+.gallery > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.gallery-title {
+  font-size: 32px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: end;
+  padding-block-end: 10px;
+}
+
+.medonos1 {
+  grid-row: span 3;
+}
+
+.bee {
+  grid-row: span 2;
+  grid-column: 2;
+}
+
+.bg-video {
+  grid-row: span 3;
+  grid-column: 2;
+}
+
+.uley {
+  grid-row: span 2;
+  grid-column: 1;
+}
+
+.paceka {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.bg-video2 {
+  grid-row: span 3;
+  grid-column: 1;
+}
+
+.friend {
+  grid-row: span 2;
+  grid-column: 2;
+  object-position: center 30%;
+}
+
+.bg-video3 {
+  grid-row: span 3;
+  grid-column: 2;
+}
+
+.medonos2 {
+  grid-row: span 2;
+  grid-column: 1;
+}
+
+.why-our-honey {
+  background-color: #374113;
+  color: #fff;
+  padding-inline: 20px;
+  position: relative;
+  z-index: 1;
+  padding-block: 30px;
+}
+
+.why-our-honey::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Vector3.svg);
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.why-our-honey-title {
+  font-size: 32px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  padding-block-end: 20px;
+}
+
+.why-our-honey-text {
+  font-family: Inter-Regular, Times, serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.image-map {
+  display: block;
+  margin-block: 20px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  padding: 30px 18px 45px;
+  background: url("../images/bg-price.png") center / cover no-repeat;
+}
+
+.price-title {
+  font-size: 32px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: end;
+  color: #fff;
+  padding-block-end: 20px;
+}
+
+.price-list {
+  list-style: none;
+  padding: 0;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding: 24px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.price-name {
+  font-family: "Inter-Regular", Times, serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.price-name small {
+  font-size: 14px;
+}
+
+.price-value {
+  white-space: nowrap;
+}
+
+.price-button {
+  align-self: center;
+  background-color: #374113;
+  text-align: center;
+  padding: 16px 16px 20px 16px;
+  border-radius: 30px;
+  font-family: "Inter-Regular", Times, serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #fff;
+  text-decoration: none;
+  margin-top: auto;
+  width: 100%;
+  max-width: 380px;
+  border: none;
+  cursor: pointer;
+}
+
+.faq {
+  background-color: #efede8;
+  padding: 50px 18px 60px;
+}
+
+.faq-title {
+  font-family: Oranienbaum, serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #374113;
+  margin-block-end: 35px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-question {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 50px 8px 10px;
+  background-color: #d08a12;
+  border: solid 0.5px #374113;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: "";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.3s;
+}
+
+.faq-item[open] .faq-question::after {
+  transform: translateY(-30%) rotate(-135deg);
+}
+
+/* Белый блок с ответом */
+.faq-answer {
+  padding: 20px 16px;
+  background-color: #fafaf8;
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000;
+}
+
+.faq-item::details-content {
+  height: 0;
+  overflow: clip;
+  transition:
+    height 0.3s,
+    content-visibility 0.3s allow-discrete;
+}
+
+.faq-item[open]::details-content {
+  height: auto;
+}
+
+.footer {
+  background-color: #374113;
+  color: #fff;
+  text-align: center;
+  padding: 40px 18px 25px;
+}
+
+.footer-logo {
+  font-family: Oranienbaum, serif;
+  font-size: 40px;
+  line-height: 1;
+  margin-block-end: 25px;
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-block-end: 20px;
+}
+
+.footer-social-link {
+  display: block;
+  transition: transform 0.2s;
+}
+
+.footer-social-link:hover {
+  transform: scale(1.08);
+}
+
+.footer-social-link img {
+  display: block;
+}
+
+.footer-text {
+  font-size: 18px;
+  line-height: 130%;
+  margin-block-end: 6px;
+}
+
+.footer-phone {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-note {
+  margin-block-start: 50px;
+  font-size: 10px;
+  line-height: 130%;
+  text-align: left;
+  opacity: 0.85;
+}
+
+.modal {
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: 24px;
+  background-color: #374113;
+  color: #fff;
+  width: min(90vw, 420px);
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.modal[open] {
+  animation: modal-in 0.25s ease-out;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.modal-content {
+  position: relative;
+  padding: 40px 24px 32px;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: "Oranienbaum", serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}
+
+.modal-text {
+  font-size: 16px;
+  line-height: 130%;
+  opacity: 0.9;
+  margin-block-end: 24px;
+}
+
+/* страница не прокручивается, пока окно открыто */
+body:has(.modal[open]) {
+  overflow: hidden;
+}
+
+
+/* ===== Планшет ===== */
+@media (min-width: 768px) {
+  .about-honey,
+  .process,
+  .gallery-section,
+  .why-our-honey,
+  .price,
+  .faq,
+  .footer {
+    padding-inline: max(40px, calc((100% - 1100px) / 2));
+  }
+
+  .title {
+    font-size: 44px;
+    padding-inline-start: 40px;
+  }
+
+  .main-page {
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .main-text {
+    font-size: 28px;
+    max-width: 640px;
+    padding-inline-start: 40px;
+  }
+
+  .about-honey p {
+    font-size: 18px;
+    max-width: 760px;
+  }
+
+  .gallery {
+    grid-auto-rows: 150px;
+    gap: 20px;
+  }
+
+  .why-our-honey-text {
+    font-size: 18px;
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .image-map {
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  .price-title,
+  .price-list {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .footer-note {
+    text-align: center;
+  }
+}
+
+/* ===== Компьютер ===== */
+@media (min-width: 1024px) {
+  .section-title,
+  .section-process-title,
+  .gallery-title,
+  .why-our-honey-title,
+  .price-title,
+  .faq-title {
+    font-size: 44px;
+  }
+
+  /* три этапа процесса в ряд */
+  .process-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .process-item {
+    margin-block-end: 0;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  /* галерея в 4 колонки, свободные места заполняются автоматически */
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 130px;
+    grid-auto-flow: dense;
+  }
+
+  .gallery > * {
+    grid-column: auto;
+  }
+
+  .bee {
+    grid-row: span 3;
+  }
+
+  .paceka {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+
+  .bg-video2 {
+    grid-row: span 2;
+  }
+
+  .about-me {
+    justify-content: flex-start;
+  }
+}
